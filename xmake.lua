@@ -3,6 +3,7 @@ add_rules("mode.debug", "mode.release")
 target("bin2s")
     set_plat("windows")
     set_toolchains("mingw")
+    set_arch("x86_64")
     set_kind("binary")
     add_cxxflags("-std=c++11", "-Wextra", "-Wpedantic", "-Werror")
     if is_mode("debug") then
